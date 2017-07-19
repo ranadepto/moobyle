@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>moobyle</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <error-page>
+    <location>/error.jsp</location>
+  </error-page>
+  <error-page>  
+    <exception-type>java.lang.Exception</exception-type>  
+    <location>/error.jsp</location>  
+  </error-page>  
+  
+  <servlet>
+    <servlet-name>Home</servlet-name>
+    <jsp-file>/index.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+   	<servlet-name>Home</servlet-name>
+    <url-pattern>/home/*</url-pattern>   
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Mail</servlet-name>
+    <jsp-file>/mail.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+   	<servlet-name>Mail</servlet-name>
+    <url-pattern>/mail/*</url-pattern>   
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ContactForm</servlet-name>
+    <jsp-file>/Mail/contactForm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+   	<servlet-name>ContactForm</servlet-name>
+    <url-pattern>/contactForm/*</url-pattern>   
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Subscription</servlet-name>
+    <jsp-file>/Mail/subscription.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+   	<servlet-name>Subscription</servlet-name>
+    <url-pattern>/subscription/*</url-pattern>   
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>loginProcess</servlet-name>
+    <jsp-file>/UserAccess/loginProcess.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+   	<servlet-name>loginProcess</servlet-name>
+    <url-pattern>/loginProcess/*</url-pattern>   
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>logout</servlet-name>
+    <jsp-file>/UserAccess/logout.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+   	<servlet-name>logout</servlet-name>
+    <url-pattern>/logout/*</url-pattern>   
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>signUp</servlet-name>
+    <jsp-file>/UserAccess/signUp.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+   	<servlet-name>signUp</servlet-name>
+    <url-pattern>/signUp/*</url-pattern>   
+  </servlet-mapping>
+
+ <servlet>
+    <servlet-name>about</servlet-name>
+    <jsp-file>/about.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+   	<servlet-name>about</servlet-name>
+    <url-pattern>/about/*</url-pattern>   
+  </servlet-mapping>
+
+ <servlet>
+    <servlet-name>products</servlet-name>
+    <jsp-file>/products.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+   	<servlet-name>products</servlet-name>
+    <url-pattern>/products/*</url-pattern>   
+  </servlet-mapping>
+
+ <servlet>
+    <servlet-name>t</servlet-name>
+    <jsp-file>/test.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+   	<servlet-name>t</servlet-name>
+    <url-pattern>/t/*</url-pattern>   
+    <url-pattern>/test/*</url-pattern>   
+  </servlet-mapping>
+
+</web-app>
